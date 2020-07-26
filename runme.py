@@ -15,17 +15,22 @@ as bytes the data is:
 b'o\xac$\xbb\x9c\x84~\xa1)\x8f\x1b\xc3z\xe5/\xab<E\xb6\x0f_\xc0\xb7M\xe3\xd0K\xe6'
 """
 
-hex_string = "6fac24bb9c847ea1298f1bc37ae52fab3c45b60f5fc0b74de3d04be6"
-binary_string = "110111110101100001001001011101110011100100001000111111\
-                 010100001001010011000111100011011110000110111101011100\
-                 101001011111010101100111100010001011011011000001111010\
-                 111111100000010110111010011011110001111010000010010111\
-                 1100110"
+hex_string_1 = "6fac24bb9c847e"
+hex_string_2 = "a1298f1bc37ae5"
+hex_string_3 = "2fab3c45b60f5f"
+hex_string_4 = "c0b74de3d04be6"
 
-byte_array = bytes.fromhex(hex_string)
-byte_array_2 = binascii.unhexlify(hex_string)
-print("data: ", byte_array, len(byte_array))
-int_array = list()
-for byte in byte_array:
-    int_array.append(byte)
-print("int list: ", int_array, len(int_array))
+byte_array_1 = bytes.fromhex(hex_string_1)
+byte_array_2 = bytes.fromhex(hex_string_2)
+byte_array_3 = bytes.fromhex(hex_string_3)
+byte_array_4 = bytes.fromhex(hex_string_4)
+
+binary_string_1 = ""
+binary_string_2 = ""
+binary_string_3 = ""
+binary_string_4 = ""
+
+print("data1: ", byte_array_1, type(byte_array_1), len(byte_array_1))
+print("data2: ", byte_array_2, type(byte_array_2), len(byte_array_2))
+print("data3: ", byte_array_3, type(byte_array_3), len(byte_array_3))
+print("data4: ", byte_array_4, type(byte_array_4), len(byte_array_4))
